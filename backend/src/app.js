@@ -11,8 +11,6 @@ dotenv.config();
 const app = express();
 
 // Middleware
-// Update the CORS configuration
-const cors = require("cors");
 
 // Allow specific origins
 app.use(
