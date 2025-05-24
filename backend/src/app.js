@@ -12,9 +12,15 @@ const app = express();
 
 // Middleware
 // Update the CORS configuration
+const cors = require("cors");
+
+// Allow specific origins
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://127.0.0.1:5173"], // Allow both localhost variations
+    origin: [
+      "https://survey-sparrow-assignment-eta.vercel.app",
+      "http://localhost:3000", // For local development
+    ],
     credentials: true,
   })
 );
