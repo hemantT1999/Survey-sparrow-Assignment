@@ -1,10 +1,13 @@
 import axios from "axios";
-import toast from "react-hot-toast";
 
-const API_URL = "http://localhost:3001/api";
+// Use deployed backend URL if available, otherwise fall back to localhost
+const baseURL =
+  import.meta.env.VITE_API_BASE_URL ||
+  "https://survey-sparrow-assignment.onrender.com/api" ||
+  "http://localhost:3001/api";
 
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL,
   timeout: 5000,
   withCredentials: true,
 });
@@ -48,3 +51,5 @@ export const deleteEvent = async (id) => {
   const response = await api.delete(`/events/${id}`);
   return response.data;
 };
+
+export default api;

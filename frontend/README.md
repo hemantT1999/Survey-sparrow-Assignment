@@ -1,15 +1,18 @@
 # Calendar Application - Frontend
 
 ## Overview
+
 This is the frontend interface for a calendar application built with React and Vite, providing an interactive way to view and manage events.
 
 ## Features
+
 - Interactive calendar view (month/week/day)
 - Create, edit, and delete events
 - Responsive design for all devices
 - Attractive UI with gradient borders and animations
 
 ## Technologies
+
 - React
 - Vite
 - Tailwind CSS
@@ -17,7 +20,9 @@ This is the frontend interface for a calendar application built with React and V
 - Axios for API calls
 
 ## Installation
+
 1. Navigate to the frontend directory:
+
 ```bash
 cd frontend
 ```
