@@ -1,7 +1,4 @@
 # Calendar Application
-
-![Calendar App Screenshot](./screenshot.png)
-
 A full-stack calendar application with event management capabilities.
 
 ## Features
