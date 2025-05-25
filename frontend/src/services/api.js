@@ -2,7 +2,6 @@ import axios from "axios";
 
 // Use deployed backend URL if available, otherwise fall back to localhost
 const baseURL =
-  import.meta.env.VITE_API_BASE_URL ||
   "https://survey-sparrow-assignment.onrender.com/api" ||
   "http://localhost:3001/api";
 
@@ -10,6 +9,10 @@ const api = axios.create({
   baseURL,
   timeout: 5000,
   withCredentials: true,
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
 });
 
 export const getEvents = async () => {
